@@ -1,14 +1,72 @@
-body.gradient-bg {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+html {
+    scroll-padding-top: 120px;
+}
+.nav-link {
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background: linear-gradient(to right, #0f9b0f, #3bdc3b);
     color: white;
-    height: 100vh;
+}
+
+body {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.welcome-section {
+    background-color: #16a085;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #34495e;
+    color: white;
+    margin: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #34495e;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 50px;
+    background: linear-gradient(to right, #20d120, #6ecc6e);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+body.bg-gradient {
+    background: linear-gradient(to right, #0f9b0f, #3bdc3b);
+    color: white;
+}
+
+.form-gradient {
+    background: linear-gradient(to right, #0f9b0f, #3bdc3b);
+    color: white;
+}
+
+.form-gradient label,
+.form-gradient input {
+    color: white;
+}
+
+.card-container {
+    position: relative;
+    top: -50px;
+    z-index: 1;
 }

@@ -3,14 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Impact</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <h2 class="mt-5">Welcome to Home Page</h2>
+    <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+        <h1 id="headerTitle" style="cursor: pointer;">Impact</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#welcome">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <button id="logoutBtn" class="btn btn-danger">Logout</button>
+    </header>
+    <div class="container mt-5 welcome-section d-flex align-items-center p-5" id="welcome">
+        <div class="col-md-6 text-left">
+            <h2>Welcome to Impact</h2>
+            <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <button class="btn btn-outline-light btn-lg me-2 rounded-pill">Get Started</button>
+            <button class="btn btn-outline-light btn-lg rounded-pill">Watch Video</button>
+        </div>
+        <div class="col-md-6 text-right">
+            <img src="img/ue.png" alt="Waterfall" class="img-fluid" style="width: 40%;">
+        </div>
+    </div>
+    <div class="container mt-5" id="about">
+        <h3>About</h3>
+    </div>
+    <div class="container mt-5" id="services">
+        <h3>Services</h3>
+    </div>
+    <div class="container mt-5" id="portfolio">
+        <h3>Portfolio</h3>
+    </div>
+    <div class="container mt-5" id="team">
+        <h3>Team</h3>
+    </div>
+    <div class="container mt-5" id="blog">
+        <h3>Blog</h3>
+    </div>
+    <div class="container mt-5" id="contact">
+        <h3>Contact</h3>
     </div>
     <script src="script.js"></script>
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2023 Impact. All rights reserved.</p>
+    </footer>
 </body>
 </html>

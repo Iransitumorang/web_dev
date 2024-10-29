@@ -28,4 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.endsWith('home.html') && localStorage.getItem('isAuthenticated') !== 'true') {
         window.location.href = 'index.html';
     }
+
+    document.getElementById('headerTitle').addEventListener('click', function() {
+        const targetElement = document.getElementById('welcome');
+        targetElement.scrollIntoView({ behavior: 'smooth' }); 
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 });
