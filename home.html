@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
     <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
         <h1 id="headerTitle" style="cursor: pointer;">Impact</h1>
         <nav>
@@ -27,13 +29,13 @@
     </header>
     <div class="container mt-5 welcome-section d-flex align-items-center p-5" id="welcome">
         <div class="col-md-6 text-left">
-            <h2>Welcome to Impact</h2>
+            <h2 style="margin-bottom: 20px;">Welcome&nbsp;to&nbsp;Impact</h2>
             <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
             <button class="btn btn-outline-light btn-lg me-2 rounded-pill">Get Started</button>
             <button class="btn btn-outline-light btn-lg rounded-pill">Watch Video</button>
         </div>
         <div class="col-md-6 text-right">
-            <img src="img/ue.png" alt="Waterfall" class="img-fluid" style="width: 40%;">
+            <img src="img/ue.png" alt="Waterfall" class="img-fluid zoom-image" style="width: 40%; opacity: 0;">
         </div>
     </div>
     <div class="container mt-5" id="features">
@@ -79,26 +81,220 @@
     </div>
     <div class="container mt-5" id="about">
         <h3 class="text-center">About</h3>
-        <p class="text-center">Kami adalah tim yang berdedikasi untuk memberikan solusi terbaik bagi kebutuhan Anda. Dengan pengalaman bertahun-t
+        <p class="text-center">Kami adalah tim yang berdedikasi untuk memberikan solusi terbaik bagi kebutuhan Anda. Dengan pengalaman bertahun-tahun, kami menawarkan berbagai fitur yang membantu Anda mencapai tujuan Anda.</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h5 class="card-title">Tim Profesional</h5>
+                        <p class="card-text">Kami memiliki tim ahli yang siap membantu Anda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h5 class="card-title">Solusi Kustom</h5>
+                        <p class="card-text">Kami menawarkan solusi yang disesuaikan dengan kebutuhan Anda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-headset fa-3x"></i>
+                        <h5 class="card-title">Dukungan Pelanggan</h5>
+                        <p class="card-text">Dukungan pelanggan 24/7 untuk memastikan kepuasan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container mt-5" id="services">
         <h3 class="text-center">Services</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-briefcase fa-3x"></i>
+                        <h5 class="card-title">Konsultasi</h5>
+                        <p class="card-text">Kami menawarkan layanan konsultasi untuk membantu Anda merencanakan strategi terbaik.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-code fa-3x"></i>
+                        <h5 class="card-title">Pengembangan Web</h5>
+                        <p class="card-text">Layanan pengembangan web yang disesuaikan dengan kebutuhan bisnis Anda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                        <h5 class="card-title">Analisis Data</h5>
+                        <p class="card-text">Kami membantu Anda menganalisis data untuk pengambilan keputusan yang lebih baik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container mt-5" id="portfolio">
         <h3 class="text-center">Portfolio</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-image fa-3x"></i>
+                        <h5 class="card-title">Proyek A</h5>
+                        <p class="card-text">Deskripsi singkat tentang proyek A yang telah kami kerjakan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-image fa-3x"></i>
+                        <h5 class="card-title">Proyek B</h5>
+                        <p class="card-text">Deskripsi singkat tentang proyek B yang telah kami kerjakan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-image fa-3x"></i>
+                        <h5 class="card-title">Proyek C</h5>
+                        <p class="card-text">Deskripsi singkat tentang proyek C yang telah kami kerjakan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container mt-5" id="team">
         <h3 class="text-center">Team</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-user fa-3x team-icon"></i>
+                        <h5 class="card-title">Anggota 1</h5>
+                        <p class="card-text">Deskripsi singkat tentang anggota tim 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-user fa-3x team-icon"></i>
+                        <h5 class="card-title">Anggota 2</h5>
+                        <p class="card-text">Deskripsi singkat tentang anggota tim 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-user fa-3x team-icon"></i>
+                        <h5 class="card-title">Anggota 3</h5>
+                        <p class="card-text">Deskripsi singkat tentang anggota tim 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container mt-5" id="blog">
         <h3 class="text-center">Blog</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-pencil-alt fa-3x"></i>
+                        <h5 class="card-title">Artikel 1</h5>
+                        <p class="card-text">Deskripsi singkat tentang artikel 1 yang telah dipublikasikan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-pencil-alt fa-3x"></i>
+                        <h5 class="card-title">Artikel 2</h5>
+                        <p class="card-text">Deskripsi singkat tentang artikel 2 yang telah dipublikasikan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-pencil-alt fa-3x"></i>
+                        <h5 class="card-title">Artikel 3</h5>
+                        <p class="card-text">Deskripsi singkat tentang artikel 3 yang telah dipublikasikan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container mt-5" id="contact">
         <h3 class="text-center">Contact</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">info@impact.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <h5 class="card-title">Telepon</h5>
+                        <p class="card-text">+62 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                        <h5 class="card-title">Alamat</h5>
+                        <p class="card-text">Jl. Contoh No. 123, Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p>&copy; 2023 Impact. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center p-5 mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Kami adalah tim yang berdedikasi untuk memberikan solusi terbaik bagi kebutuhan Anda.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="https://facebook.com" class="text-white social-icon"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://twitter.com" class="text-white social-icon"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://instagram.com" class="text-white social-icon"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://linkedin.com" class="text-white social-icon"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: info@impact.com</p>
+                <p>Telepon: +62 123 456 789</p>
+            </div>
+        </div>
+        <p class="mt-4">&copy; 2023 Impact. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
